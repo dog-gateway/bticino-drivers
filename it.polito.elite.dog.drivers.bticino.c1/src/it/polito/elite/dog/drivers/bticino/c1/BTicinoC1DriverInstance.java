@@ -20,8 +20,8 @@ package it.polito.elite.dog.drivers.bticino.c1;
 import it.polito.elite.dog.core.library.model.ControllableDevice;
 import it.polito.elite.dog.core.library.model.DeviceStatus;
 import it.polito.elite.dog.core.library.model.devicecategory.Button;
+import it.polito.elite.dog.core.library.model.devicecategory.Controllable;
 import it.polito.elite.dog.core.library.model.devicecategory.DimmerLamp;
-import it.polito.elite.dog.core.library.model.devicecategory.ElectricalSystem;
 import it.polito.elite.dog.core.library.model.devicecategory.Lamp;
 import it.polito.elite.dog.core.library.model.devicecategory.OnOffSwitch;
 import it.polito.elite.dog.core.library.model.devicecategory.SimpleLamp;
@@ -269,7 +269,7 @@ public class BTicinoC1DriverInstance implements BTicinoSpecificDriver, Lamp, Sim
 	@Override
 	public void updateStatus()
 	{
-		((ElectricalSystem) this.device).updateStatus();
+		((Controllable) this.device).updateStatus();
 	}
 	
 }

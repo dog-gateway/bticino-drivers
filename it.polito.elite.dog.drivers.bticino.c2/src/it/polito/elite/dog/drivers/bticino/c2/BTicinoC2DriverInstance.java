@@ -17,9 +17,15 @@
  */
 package it.polito.elite.dog.drivers.bticino.c2;
 
+import java.util.Set;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import com.bticino.core.OpenWebNet;
+
 import it.polito.elite.dog.core.library.model.ControllableDevice;
 import it.polito.elite.dog.core.library.model.DeviceStatus;
-import it.polito.elite.dog.core.library.model.devicecategory.ElectricalSystem;
+import it.polito.elite.dog.core.library.model.devicecategory.Controllable;
 import it.polito.elite.dog.core.library.model.devicecategory.ShutterActuator;
 import it.polito.elite.dog.core.library.model.devicecategory.ShutterButton;
 import it.polito.elite.dog.core.library.model.state.ShutterState;
@@ -32,12 +38,6 @@ import it.polito.elite.dog.core.library.model.statevalue.RestTripleStateValue;
 import it.polito.elite.dog.core.library.model.statevalue.UpTripleStateValue;
 import it.polito.elite.dog.drivers.bticino.interfaces.BTicinoNetworkDriver;
 import it.polito.elite.dog.drivers.bticino.interfaces.BTicinoSpecificDriver;
-
-import java.util.Set;
-import java.util.Timer;
-import java.util.TimerTask;
-
-import com.bticino.core.OpenWebNet;
 
 /**
  * 
@@ -367,6 +367,6 @@ public class BTicinoC2DriverInstance implements BTicinoSpecificDriver, ShutterAc
 	@Override
 	public void updateStatus()
 	{
-		((ElectricalSystem) this.device).updateStatus();;
+		((Controllable) this.device).updateStatus();;
 	}
 }

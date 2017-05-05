@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: it.polito.elite.dog.drivers.bticino.c2
 Bundle-SymbolicName: it.polito.elite.dog.drivers.bticino.c2
-Bundle-Version: 0.9.1.pre
+Bundle-Version: 0.9.2
 Bundle-Activator: it.polito.elite.dog.drivers.bticino.c2.Activator
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Import-Package: com.bticino.core,
